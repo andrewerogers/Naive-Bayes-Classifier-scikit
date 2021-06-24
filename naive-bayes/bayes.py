@@ -20,7 +20,7 @@ def process_file(file):
 
 
 # train_nb_model trains naive bayes model and displays accuracy
-# metrics in cross validation
+# metrics in cross validation. We build our vocabulary to use in prediction.
 def train_nb_model(features, labels):
     v = CountVectorizer(stop_words='english')
     all_features = v.fit_transform(features)
